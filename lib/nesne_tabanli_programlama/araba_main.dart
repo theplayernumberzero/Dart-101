@@ -4,17 +4,16 @@ void main(){
   //Nesne olusturma
   var audi = Araba(renk: "Siyah", hiz: 250, calisiyorMu: true);
   var fiat = Araba(renk: "Gri", hiz: 180, calisiyorMu: false);
-  //Deger atama
-  fiat.hiz = 150;
-  audi.hiz = 300;
-  //Deger okuma
-  print("Fiat Renk:           ${fiat.renk}");
-  print("Fiat Hiz:            ${fiat.hiz}");
-  print("Fiat Calisiyor Mu :  ${fiat.calisiyorMu}");
 
-  print("-------");
+  audi.hizlan(10);
+  audi.bilgiAl();
 
-  print("Audi Renk:           ${audi.renk}");
-  print("Audi Hiz:            ${audi.hiz}");
-  print("Audi Calisiyor Mu :  ${audi.calisiyorMu}");
+  fiat.calistir();
+  fiat.bilgiAl();
+  fiat.hizlan(100);
+  fiat.bilgiAl();
+  fiat.yavasla(50);
+  fiat.bilgiAl();
+  fiat.durdur();
+  fiat.bilgiAl();
 }
